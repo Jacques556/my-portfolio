@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourName.dev | Creative Frontend Developer</title>
+    <title>James Bryan | Portfolio</title>
 
     <!-- Google Fonts & Remix Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,14 +18,14 @@
 
 <body>
 
-    <!-- Ambient Glow Background Blobs -->
+    <!-- Ambient Glow Background Blobs[cite: 1] -->
     <div class="bg-blur-blob blob-1"></div>
     <div class="bg-blur-blob blob-2"></div>
 
-    <!-- Floating Navigation Pill -->
+    <!-- Floating Navigation Pill[cite: 1] -->
     <header>
         <div class="nav-container">
-            <a href="#home" class="logo">YourName<span>.</span>dev</a>
+            <a href="#home" class="logo">James<span>.</span>dev</a>
             <nav>
                 <ul id="nav-list">
                     <li><a href="#home" class="active">Home</a></li>
@@ -41,106 +41,88 @@
     </header>
 
     <main>
-        <!-- Hero Section -->
+        <!-- Hero Section[cite: 3] -->
         <section id="home" class="hero">
-            <div class="hero-content">
-                <h1>Creative Frontend Developer & UI/UX Designer</h1>
-                <p>I build intuitive, high-performance web applications with a focus on exceptional user experiences.
-                </p>
+            <div class="hero-content reveal">
+                <h1>Hello, I'm James Bryan</h1>
+                <p>An organized and motivated beginner exploring web development and digital tools, ready to assist with
+                    remote administrative and technical tasks.</p>
 
                 <div class="hero-buttons">
                     <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
                 </div>
 
                 <div class="social-links">
-                    <a href="#" target="_blank"><i class="ri-github-fill"></i></a>
+                    <a href="https://github.com/Jacques556" target="_blank"><i class="ri-github-fill"></i></a>
                     <a href="#" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
-                    <a href="#" target="_blank"><i class="ri-twitter-x-fill"></i></a>
                 </div>
             </div>
 
-            <div class="hero-image-wrapper">
+            <div class="hero-image-wrapper reveal">
                 <div class="profile-glow-ring"></div>
                 <div class="profile-pic-container">
-                    <!-- Replace this with your actual image path: e.g., assets/images/profile.jpg -->
-                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
-                        alt="Profile Picture">
+                    <img src="assets/images/profile.png" alt="Profile Picture">
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
+        <!-- About Section[cite: 3] -->
         <section id="about" class="about">
-            <div class="section-header">
+            <div class="section-header reveal">
                 <h2>About Me</h2>
                 <div class="header-line"></div>
             </div>
             <div class="about-grid">
-                <div class="about-text">
-                    <p>I am a passionate developer and designer blending technical precision with modern aesthetic
-                        design. I specialize in crafting seamless user interfaces that perform smoothly across all
-                        devices.</p>
-                    <p>When I'm not writing code, you'll find me exploring emerging UI trends, optimizing workflows, or
-                        contributing to open-source communities.</p>
+                <div class="about-text reveal">
+                    <p>I am starting my professional journey in online work and tech support. I pride myself on being
+                        detail-oriented, quick to learn new software, and ready to handle day-to-day operations with
+                        care.</p>
+                    <p>My goal is to support clients reliably while steadily building my practical skills in web
+                        technologies, data organization, and digital workflows.</p>
                 </div>
-                <div class="skills-card">
-                    <h3>Core Stack</h3>
+                <div class="skills-card reveal">
+                    <h3>Skills & Tools</h3>
                     <div class="skills-tags">
                         <span>HTML5</span>
                         <span>CSS3</span>
-                        <span>JavaScript (ES6+)</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Git</span>
+                        <span>JavaScript</span>
+                        <span>Git & GitHub</span>
+                        <span>Google Workspace</span>
+                        <span>Data Entry</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
+        <!-- Projects Section[cite: 3] -->
         <section id="projects" class="projects">
-            <div class="section-header">
-                <h2>Projects Section</h2>
+            <div class="section-header reveal">
+                <h2>Projects & Practice Work</h2>
                 <div class="header-line"></div>
             </div>
-            <p class="section-subtitle">Explore some of my recent web development work.</p>
+            <p class="section-subtitle reveal">Here are some of the projects I've built while learning.</p>
+
+            <!-- Project Filter Buttons -->
+            <div class="filter-container reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Development</button>
+                <button class="filter-btn" data-filter="admin">Admin / Tasks</button>
+            </div>
 
             <div class="project-grid">
                 <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-top">
-                        <i class="ri-shopping-bag-3-line card-icon"></i>
-                        <div class="project-links">
-                            <a href="#" target="_blank" class="project-action-btn"><i class="ri-external-link-line"></i>
-                                Live</a>
-                            <a href="#" target="_blank" class="project-action-btn"><i class="ri-github-line"></i>
-                                Code</a>
-                        </div>
-                    </div>
-                    <h3>E-commerce Platform</h3>
-                    <p>Built a modern, responsive e-commerce frontend using React and Stripe integration for seamless
-                        checkout.</p>
-                    <div class="tech-tags">
-                        <span>React</span>
-                        <span>Node.js</span>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-card active-card">
+                <div class="project-card reveal" data-category="web">
                     <div class="project-top">
                         <i class="ri-code-box-line card-icon"></i>
                         <div class="project-links">
-                            <a href="#" target="_blank" class="project-action-btn"><i class="ri-external-link-line"></i>
-                                Live</a>
-                            <a href="#" target="_blank" class="project-action-btn"><i class="ri-github-line"></i>
-                                Code</a>
+                            <a href="https://github.com/Jacques556/my-portfolio" target="_blank"
+                                class="project-action-btn"><i class="ri-github-line"></i> Code</a>
                         </div>
                     </div>
-                    <h3>Developer Portfolio</h3>
-                    <p>A sleek, glassmorphic personal developer portfolio built entirely with vanilla HTML, CSS, and
-                        JavaScript.</p>
+                    <h3>Personal Portfolio</h3>
+                    <p>A clean, responsive personal website built using HTML, CSS, and JavaScript to showcase my work
+                        online.</p>
                     <div class="tech-tags">
                         <span>HTML5</span>
                         <span>CSS3</span>
@@ -148,50 +130,66 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
+                <!-- Project 2 -->
+                <div class="project-card reveal" data-category="admin">
                     <div class="project-top">
-                        <i class="ri-dashboard-3-line card-icon"></i>
+                        <i class="ri-file-text-line card-icon"></i>
                         <div class="project-links">
                             <a href="#" target="_blank" class="project-action-btn"><i class="ri-external-link-line"></i>
-                                Live</a>
-                            <a href="#" target="_blank" class="project-action-btn"><i class="ri-github-line"></i>
-                                Code</a>
+                                View</a>
                         </div>
                     </div>
-                    <h3>Analytics Dashboard</h3>
-                    <p>Created an interactive real-time data visualization dashboard featuring clean charts and dark
-                        mode ui.</p>
+                    <h3>Task & Data Tracker Template</h3>
+                    <p>A structured Google Sheets layout designed for organizing daily schedules, tracking tasks, and
+                        managing data cleanly.</p>
                     <div class="tech-tags">
-                        <span>Vue.js</span>
-                        <span>Tailwind</span>
+                        <span>Google Sheets</span>
+                        <span>Organization</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card reveal" data-category="web">
+                    <div class="project-top">
+                        <i class="ri-git-repository-line card-icon"></i>
+                        <div class="project-links">
+                            <a href="https://github.com/Jacques556" target="_blank" class="project-action-btn"><i
+                                    class="ri-github-line"></i> GitHub</a>
+                        </div>
+                    </div>
+                    <h3>Practice Repositories</h3>
+                    <p>A collection of code exercises and practice projects managed using Git version control in VS
+                        Code.</p>
+                    <div class="tech-tags">
+                        <span>Git</span>
+                        <span>Markdown</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Contact Section -->
+        <!-- Contact Section[cite: 3] -->
         <section id="contact" class="contact">
-            <div class="section-header">
-                <h2>Contact Section</h2>
+            <div class="section-header reveal">
+                <h2>Contact</h2>
                 <div class="header-line"></div>
             </div>
-            <p>Let's collaborate on your next big idea. Drop me a line!</p>
-            <div class="contact-box-container">
+            <p class="reveal">I'm looking forward to my first online opportunity. Feel free to reach out!</p>
+            <div class="contact-box-container reveal">
                 <a href="mailto:your.email@example.com" class="contact-box">
                     <i class="ri-mail-send-line"></i>
                     <span>your.email@example.com</span>
                 </a>
                 <div class="contact-box">
                     <i class="ri-map-pin-line"></i>
-                    <span>San Francisco, CA</span>
+                    <span>Olongapo City, Philippines</span>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 YourName.dev. All rights reserved.</p>
+    <footer class="reveal">
+        <p>&copy; 2026 James Bryan. All rights reserved.</p>
     </footer>
 
     <script src="js/main.js"></script>
